@@ -1,3 +1,6 @@
+import java.awt.desktop.SystemEventListener;
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         final String ANSI_RESET = "\u001B[0m";
@@ -16,5 +19,17 @@ public class Main {
 
         // Second Task 1.2
         System.out.println(ANSI_PURPLE+"Second Task 1.2"+ANSI_RESET);
+
+        int clientDeviceYear = 2015;
+        clientOS= 1;
+        int clientTelephoneYear = 2015;
+        if( clientOS== iOs && clientTelephoneYear <clientDeviceYear)
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+         if (clientOS == iOs && clientTelephoneYear >= clientDeviceYear)
+            System.out.println("Установите версию приложения для iOS по ссылке");
+         if(clientOS == android && clientTelephoneYear < clientDeviceYear)
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+         if(clientOS== android && clientTelephoneYear >= clientDeviceYear)
+            System.out.println("Установите версию приложения для Android по ссылке");
     }
 }
