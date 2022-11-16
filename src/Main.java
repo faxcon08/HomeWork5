@@ -31,5 +31,16 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
          if(clientOS== android && clientTelephoneYear >= clientDeviceYear)
             System.out.println("Установите версию приложения для Android по ссылке");
-    }
-}
+
+
+         // Third Task 1.3
+        System.out.println(ANSI_PURPLE+"Third Task 1.3"+ANSI_RESET);
+        int year = 608;
+        if((year%4==0 && year%100!=0) || year%400==0)
+            System.out.println(year+" год является высокосным");
+        else
+            System.out.println(year+" год не является высокосным");
+
+
+    } // main
+}// Main
