@@ -41,6 +41,22 @@ public class Main {
         else
             System.out.println(year+" год не является высокосным");
 
+        // Fourth Task 1.4
+        System.out.println(ANSI_PURPLE+"Fourth Task 1.4"+ANSI_RESET);
+
+        int deliveryDistance = 95;
+
+        if (deliveryDistance<20)
+            System.out.println("Потребуется дней: "+1+" день");
+        else if ( deliveryDistance>=20 && deliveryDistance<60)
+            System.out.println("Потребуется дней: 2 дня");
+        else if (deliveryDistance >=60 && deliveryDistance<100)
+            System.out.println("Потребуется дней: 3 дня");
+        else
+            System.out.println("Доставку не осуществляем");
+
+        // Fifth Task 1.5
+        System.out.println(ANSI_PURPLE+"Fifth Task 1.5"+ANSI_RESET);
 
     } // main
 }// Main
